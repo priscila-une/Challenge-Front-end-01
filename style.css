@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+    color: #333333;
+   
+}
+
+header{
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100%;
+}
+
+#meufreelaLogo{
+    width: 150px;
+}
+
+
+.nav__social--list-icon{
+    display: flex;
+    gap: 10px;
+}
+
+.nav__social--icon a:hover{
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.801);
+}
+
+main{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+   
+}
+
+main::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('src/backgroundImg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__content{
+    color: #fff;
+    width: 70%;
+    position: relative;
+    z-index: 2;
+    transition: 2s;
+    transition-delay: .3s;
+       
+}
+
+.main__content p{
+    font-size: 2.5rem;
+    
+}
+.main__content h1{
+    font-size: 6rem;
+    width: 70%;
+}
+
+#luz{
+    color: yellow;
+}
+
+.main__content button{
+    background-color: #EE5253;
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 10vh;
+    border: none;
+    font-weight: 200;
+    
+}
+
+.main__content button:hover{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: #e93e3e;
+    cursor: pointer;
+    transition: ease-in .5s;
+}
+
+
+#iniciativa{
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0 88%);
+}
+
+#iniciativa div{
+   padding-top: 40px;
+   width: 50%;
+    
+}
+
+#iniciativa h3{
+    font-size: 4rem;
+}
+
+#iniciativa p{
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+
+#contato{
+    display: flex;
+    width: 80%;
+   
+    margin: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% 15%;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#contato h3{
+    font-size: 4rem;
+}
+
+#contato p{
+    margin: 20px 0;
+}
+
+#contato label{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+   
+}
+
+#contato input{
+    min-width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    display: block;
+    border: 1px solid #CDCDCD;
+    padding-left: 10px;
+}
+
+form button{
+    min-width: 250px;
+    height: 50px;
+    background-color:#10AC84;
+    border-radius: 8px;
+    color: #EAEAEA;
+    border: none;
+}
+
+form button:hover{
+    background-color:#008665;
+}
+
+footer{
+    background-color: #EAEAEA;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+

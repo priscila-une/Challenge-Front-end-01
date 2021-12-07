@@ -1,0 +1,48 @@
+
+@media (max-width: 767px){
+    .main__content{
+        width: 90%;
+    }
+    .main__content p{
+        font-size: 2rem;
+    }
+    
+    .main__content h1{
+        font-size: 4rem;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    #iniciativa{
+        flex-direction: column;
+    
+    }
+
+    #iniciativa div{
+        width: 100%;
+    }
+    
+    #iniciativa img{
+        justify-content: center;
+    }
+
+    form{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #iniciativa{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #iniciativa img{
+        width: 50%;
+    }
+    
+    form{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

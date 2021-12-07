@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Meu Freela</title>
+</head>
+<body>
+    <header >
+        <img id="meufreelaLogo" src="src/MeuFreela.svg" alt="logo MeuFreela">
+        <nav class="nav__container">
+          <ul class="nav__social--list-icon">
+            <li class="nav__social--icon">
+              <a href="https://linkedin.com/" target="_blank" >
+                <img src="src/linkedinLogo.svg" alt="linkedin Logo">
+              </a>
+            </li>
+            <li class="nav__social--icon"> 
+              <a href="https://instagram.com/" target="_blank" >
+                <img src="src/instagramLogo.svg" alt="instagram Logo">
+              </a>
+            </li>
+            <li class="nav__social--icon">
+              <a href="https://twitter.com/">
+                    <img src="src/twitterLogo.svg" alt="twitter Logo">
+              </a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="main__content">
+        <p>Desenvolvedores prontos para ação</p>
+        <h1>Seu projeto pronto na velocidade da <span id="luz">luz</span></h1>
+        <a href="#contato"><button>Peça uma reunião</button></a>
+      </div>
+    </main>
+    <section id="iniciativa">
+      <div >
+        <h3>Nossa iniciativa</h3>
+        <p>Somos desenvolvedores que se dedicam a fazer projetos perfeitos e entregar valor para todos os seus clientes. Gostamos de ver clientes satisfeitos com projetos feitos com carinho, atenção e qualidade altíssima.</p>
+      </div>
+      <img src="src/pic-thinking-man.svg" alt="Homem pensando" loading="lazy">
+    </section>
+    <section id="contato">
+      
+      <h3>Mande um oi, ligamos para você!</h3>
+      <p>Preencha seus dados para que a gente possa entrar em contato.</p>
+      <form action="#" method="post" id="form__contato">
+        <div class="form-group">
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" placeholder="Ex: Nome Sobrenome" required>
+        </div>  
+        <div class="form-group">
+          <label for="whatsapp">Whatsapp</label>
+          <input type="number" id="whatsapp" placeholder="(99) 99999-9999" required min="11">
+        </div>   
+
+        <button type="submit" form="form__contato">Peça uma reunião</button>
+      </form>
+    </section>
+    <footer>
+      <p>Desafio 1 - front-end iniciante</p>
+      <p>Iniciativa <strong>DEV HALL</strong></p>
+    </footer>
+</body>
+</html>
